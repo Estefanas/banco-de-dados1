@@ -1,0 +1,17 @@
+drop table aluno;
+use argentina;
+create table aluno(
+	matricula int NOT NULL,
+    primary key(matricula),
+    nome varchar (100) NOT NULL,
+    data_nascimento date NOT NULL,
+    cpf varchar (14) unique
+);
+desc aluno;
+
+select * from aluno;
+insert into aluno values
+	(1,'Adryell','2008-09-24',null);
+insert into aluno (nome, data_nascimento, matricula) values
+	('Estéfanas','2009-01-23', 2, null);
+    
